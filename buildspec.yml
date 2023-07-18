@@ -1,10 +1,10 @@
 version: 0.2
-
-phases:
-  variables:
+env:
+ variables:
    IMAGE_REPO_NAME: webapplication
    IMAGE_TAG: latest
-    
+
+phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
